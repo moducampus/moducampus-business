@@ -1,0 +1,46 @@
+@import "../../styles/lib/all";
+
+.Company {
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+
+    .company-content {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .company-text {
+        @include text;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: $mobile) {
+    .Company {
+        .company-text{
+            top: 90px;
+            left: 90px;
+            font-size: 2rem;
+        }
+    }
+}
+@media screen and (min-width: $mobile + 1) and (max-width: $tablet) {
+    .Company {
+        .company-text{
+            top: 110px;
+            left: 110px;
+            font-size: 2.5rem;
+        }
+    }
+}
+@media screen and (min-width: $tablet + 1) {
+    .Company {
+        .company-text{
+            top: 130px;
+            left: 130px;
+            font-size: 3rem;
+        }
+    }
+}
+

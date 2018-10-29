@@ -1,0 +1,11 @@
+@import "../../styles/lib/all";
+
+.service-section {
+    position: relative;
+    padding-bottom: 20vh;
+
+    .subservice{
+        position: relative; // TODO: 왜 absolute일 때 깨지는 걸까?
+        padding-top: 40vh;
+    }
+}

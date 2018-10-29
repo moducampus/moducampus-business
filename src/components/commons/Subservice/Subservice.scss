@@ -1,0 +1,25 @@
+@import "../../../styles/lib/all";
+
+
+.main-text, #link{  
+    top: $text-top + 5vh;
+    position: absolute;
+    right: $common-right-padding ;
+    font-size: 1.4rem;
+}
+
+.main-text{
+    left: 20vw;
+    font-weight: 600;
+}
+
+#link{
+    color: $dark-gray;
+    text-decoration: none;
+}
+.text {
+    top: $text-top+13vh;
+    font-size: 1.4rem;
+    bottom: 20vh;
+    @include text;
+}

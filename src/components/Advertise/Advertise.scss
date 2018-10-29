@@ -1,0 +1,24 @@
+@import "../../styles/lib/all";
+
+.advertise-section {
+    position: relative;
+    padding-bottom: $section-bottom;
+
+    .button-big{
+        margin-top: 50vh;
+
+        &-text {
+            position: absolute;
+            left: 30%;
+            top: 20%;
+
+            &::after {
+                font-size: 2rem;
+                color: $text-color;
+                content: '>';
+            }
+        }
+    }
+}
+
+//TODO: advertise-section이 button까지 먹도록 하게
