@@ -15,12 +15,16 @@ class Service extends Component {
                 {name: "네모공방", info: "발표,팀프로젝트 시 많이 고민하는 것이 바로 피피티 제작입니다. 우리는 대학생들이 본질에 집중할 수 있또록 피피티 템플릿을 제작하여 무료로 나눠주고 있습니다. 피피티는 블로그와 페이스북 페이지로 운영하고 있습니다."}
             ];
 
-        const serviceList = serviceData.map(data =>( <Subservice key={data.name.toString()} name={data.name.toString()} info={data.info.toString()}/>));
-
+        const serviceList = serviceData.map(data =>( <Subservice className="subservice" key={data.name.toString()} name={data.name.toString()} info={data.info.toString()}/>));
+        
         return (
-            <div className="service-section">
-                <Subtitle className="subtitle" title={title} />
-                {serviceList}
+            <div className="Service" id="service">
+                <div className="container container-content">
+                    <Subtitle className="subtitle" title={title} />
+                    <div className="service-content">
+                        {serviceList}
+                    </div>
+                </div>
             </div>
         );
     }

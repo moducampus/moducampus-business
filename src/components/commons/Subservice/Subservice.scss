@@ -1,25 +1,67 @@
 @import "../../../styles/lib/all";
 
+.Subservice{
+    position: relative;
+    height: 60%;
 
-.main-text, #link{  
-    top: $text-top + 5vh;
-    position: absolute;
-    right: $common-right-padding ;
-    font-size: 1.4rem;
+    .service-main-text {
+        
+    }
+
+    .service-link{
+        color: $text-color;
+        text-decoration: none;
+    }
+
+    .service-text {
+        @include text;
+        margin-top: 30px;
+    }
 }
 
-.main-text{
-    left: 20vw;
-    font-weight: 600;
+@media screen and (min-width: 0px) and (max-width: $mobile) {
+    .Subservice {
+        .service-main-text{
+            font-size: 2rem;
+        }
+        .service-link{
+            font-size: 1.5rem;
+        }
+        .service-text{
+            font-size: 2rem;
+            right: 20vw;
+        }
+    }
 }
-
-#link{
-    color: $dark-gray;
-    text-decoration: none;
+@media screen and (min-width: $mobile + 1) and (max-width: $tablet) {
+    .Subservice {
+        .service-main-text{
+            font-size: 2.5rem;
+            display: inline;
+        }
+        .service-link{
+            font-size: 2rem;
+            right: 20vw;
+        }
+        .service-text{
+            font-size: 2.5rem;
+            right: 15vw;
+        }
+    }
 }
-.text {
-    top: $text-top+13vh;
-    font-size: 1.4rem;
-    bottom: 20vh;
-    @include text;
+@media screen and (min-width: $tablet + 1) {
+    .Subservice {
+        .service-main-text{
+            font-size: 3rem;
+            display: inline;
+        }
+        .service-link{
+            font-size: 2.5rem;
+            right: 20vw;
+        }
+        .service-text{
+            font-size: 3rem;
+            right: 10vw;
+        }
+    }
 }
