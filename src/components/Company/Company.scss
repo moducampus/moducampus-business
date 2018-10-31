@@ -2,6 +2,7 @@
 
 .Company {
     position: relative;
+    height:100%;
 
     .company-content {
         height: 100%;
@@ -15,13 +16,11 @@
 
 @media screen and (min-width: 0px) and (max-width: $mobile) {
     .Company {
-        height: 60vh;
         margin-top: 10vh;
 
         .company-text{
-            font-size: 2rem;
-            height: 60vh;
-            padding-left: 6rem;
+            font-size: 1.8rem;
+            padding-left: 7rem;
             padding-right: 4rem;
         }
     }
@@ -29,12 +28,10 @@
 
 @media screen and (min-width: $mobile + 1) and (max-width: $tablet) {
     .Company {
-        height: 60vh;
         margin-top: 15vh;
 
         .company-text{
             font-size: 2.5rem;
-            height: 50vh;
             padding-left: 9rem;
             padding-right: 5rem;
         }
@@ -43,12 +40,10 @@
 
 @media screen and (min-width: $tablet + 1) {
     .Company {
-        height: 80vh;
         margin-top: 20vh;
 
         .company-text{
            font-size: 3rem;
-           height: 65vh;
            padding-left: 11rem;
            padding-right: 7rem;
         }

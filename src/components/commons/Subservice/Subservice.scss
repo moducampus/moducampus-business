@@ -1,8 +1,8 @@
 @import "../../../styles/lib/all";
 
 .Subservice{
-    position: absolute;
-    height: 100%;
+    width: 100%;
+    margin-bottom: 10vh;
 
     .service-main-text {
         
@@ -23,45 +23,43 @@
 @media screen and (min-width: 0px) and (max-width: $mobile) {
     .Subservice {
         .service-main-text{
-            font-size: 2rem;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
         }
         .service-link{
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
         .service-text{
-            font-size: 2rem;
+            font-size: 1.8rem;
+
         }
     }
 }
 @media screen and (min-width: $mobile + 1) and (max-width: $tablet) {
     .Subservice {
         .service-main-text{
-            font-size: 2.5rem;
+            font-size: 3.5rem;
             display: inline;
         }
         .service-link{
-            font-size: 2rem;
-            right: 20vw;
+            font-size: 3rem;
         }
         .service-text{
             font-size: 2.5rem;
-            right: 15vw;
         }
     }
 }
 @media screen and (min-width: $tablet + 1) {
     .Subservice {
         .service-main-text{
-            font-size: 3rem;
+            font-size: 4.5rem;
             display: inline;
         }
         .service-link{
-            font-size: 2.5rem;
-            right: 20vw;
+            font-size: 4rem;
         }
         .service-text{
             font-size: 3rem;
-            right: 10vw;
         }
     }
 }
