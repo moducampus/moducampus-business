@@ -1,24 +1,75 @@
 @import "../../styles/lib/all";
 
-.advertise-section {
+.Advertise {
     position: relative;
-    padding-bottom: $section-bottom;
+    height: 100%;   
 
-    .button-big{
-        margin-top: 50vh;
+    .advertise-wrapper {
+        height: 100%;
+        position: relative;
 
-        &-text {
-            position: absolute;
-            left: 30%;
-            top: 20%;
-
-            &::after {
-                font-size: 2rem;
-                color: $text-color;
-                content: '>';
-            }
+        .advertise-content {
+            height: 100%;
+            width: 100%;
+            position: relative;
         }
     }
 }
 
-//TODO: advertise-section이 button까지 먹도록 하게
+@media screen and (min-width: 0px) and (max-width: $mobile) {
+    .Advertise {
+
+        .advertise-content{
+            padding-left: 7rem;
+            padding-right: 4rem;
+
+            .advertise-main-text{
+                font-size: 2.5rem;
+                margin-bottom: 30px;
+            }
+            .advertise-text{
+                @include text;
+                font-size: 1.8rem;
+                margin-bottom: 30px;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: $mobile + 1) and (max-width: $tablet) {
+    .Advertise {
+        .advertise-content{
+            padding-left: 9rem;
+            padding-right: 5rem;
+        }
+        .advertise-main-text{
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+        .advertise-text{
+            @include text;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: $tablet + 1) {
+    .Advertise {
+        .advertise-content{
+            padding-left: 11rem;
+            padding-right: 7rem;
+        }
+        .advertise-main-text{
+            font-size: 4rem;
+            margin-bottom: 30px;
+        }
+        .advertise-text{
+            @include text;
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+    }
+}
+
