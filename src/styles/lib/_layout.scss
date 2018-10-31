@@ -1,24 +1,13 @@
 @import "./variables";
 
 .container {
-    max-width: $desktop;
+    max-width: 1024px;
     width: 100%;
     padding-left: 16px;
     padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
+    display: block;
 }
 
 // auto := 내부,외부 모두 display:block일 경우 가로와 세로의 여백을 동일하게
-
-@media screen and (max-width: $tablet) {
-
-}
-
-@media screen and (max-width: $desktop) {
-
-}
-
-@media screen and (max-width: $mobile) {
-
-}

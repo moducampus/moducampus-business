@@ -1,8 +1,8 @@
 @import "../../../styles/lib/all";
 
 .Subservice{
-    position: relative;
-    height: 60%;
+    position: absolute;
+    height: 100%;
 
     .service-main-text {
         
@@ -15,6 +15,7 @@
 
     .service-text {
         @include text;
+        position: relative;
         margin-top: 30px;
     }
 }
@@ -29,7 +30,6 @@
         }
         .service-text{
             font-size: 2rem;
-            right: 20vw;
         }
     }
 }

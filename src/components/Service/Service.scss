@@ -2,8 +2,8 @@
 
 .Service {
     position: relative;
-    width: 100vw;
     height: 80vh;
+    margin-top: 10vh;
 
     .container-content{
         position: relative;
@@ -22,7 +22,7 @@
 @media screen and (min-width: 0px) and (max-width: $mobile) {
     .Service {
         .service-content{
-            top: 90px;
+            padding-top: 90px;
             left: 90px;
         }
     }
@@ -30,7 +30,7 @@
 @media screen and (min-width: $mobile + 1) and (max-width: $tablet) {
     .Service {
         .service-content{
-            top: 110px;
+            padding-top: 110px;
             left: 110px;
         }
     }
@@ -38,7 +38,7 @@
 @media screen and (min-width: $tablet + 1) {
     .Service {
         .service-content{
-            top: 130px;
+            padding-top: 130px;
             left: 130px;
         }
     }

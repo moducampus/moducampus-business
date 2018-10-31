@@ -1,25 +1,31 @@
 @import "../../../styles/lib/all";
 
 .Subtitle{
-    margin-top: 100px;
     position: relative;
 
-    .small-square{
-        position: absolute;
-        left: -10px;
-        background-color: $dark-gray;
-        transform: rotate(40deg);
-    }
+    .subtitle-content {
+        position: relative;
+        width: 100%;
+        height: 100%;
 
-    h2{
-        position: absolute;
-        font-weight: 800;
-        word-break: keep-all;
-    }
+        .small-square{
+            position: absolute;
+            left: -10px;
+            background-color: $dark-gray;
+            transform: rotate(40deg);
+        }
+    
+        h2{
+            position: absolute;
+            font-weight: 800;
+            word-break: keep-all;
+        }
+    }    
 }
 
 @media screen and (min-width: 0px) and (max-width: $mobile) {
     .Subtitle {
+        height: 10vh;
         .small-square {
             width: 25px;
             height: 25px;
@@ -27,12 +33,13 @@
 
         h2{
             font-size: 3.5rem;
-            width: 9rem;
+            width: 7rem;
         }
     }
 }
 @media screen and (min-width: $mobile + 1) and (max-width: $tablet) {
     .Subtitle {
+        height: 13vh;
         .small-square {
             width: 30px;
             height: 30px;
@@ -41,10 +48,12 @@
     h2{
         font-size: 4.5rem;
         width: 12rem;
+        height: 100%;
     }
 }
 @media screen and (min-width: $tablet + 1) {
     .Subtitle {
+        height: 15vh;
         .small-square {
             width: 35px;
             height: 35px;
@@ -52,6 +61,7 @@
     }
     h2{
         font-size: 5.5rem;
-        width: 15rem;
+        width: 10rem;
+        height: 100%;
     }
  }
