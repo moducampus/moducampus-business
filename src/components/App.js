@@ -7,6 +7,7 @@ import Service from "components/Service";
 import Advertise from "components/Advertise";
 import News from "components/News";
 import Team from "components/Team";
+import Contact from "components/Contact";
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
         <Advertise/>
         <News/>
         <Team/>
+        <Contact/>
       </Fragment>
     );
   }

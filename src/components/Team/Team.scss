@@ -3,8 +3,13 @@
 .Team{
     position: relative;
     height: 100%;
+    .team-wrapper{
+        height: 100%;
+    }
 
 }
+
+//TODO: margin-top vh 단위 모두 바꾸기
 
 @media screen and (min-width: 0px) and (max-width: $mobile) {
     .Team {
