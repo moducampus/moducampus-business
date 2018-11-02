@@ -1,0 +1,73 @@
+@import "../../../styles/lib/all";
+
+.Subnews{
+    .subnews-wrapper{
+        .subnews-line {
+            border-top: 1px solid $text-color;
+        }
+        .subnews-content{
+            .subnews-title{
+                color: black;
+                
+            }
+            .subnews-text{
+                color: $text-color;
+            }
+        }
+    }
+}
+
+//TODO: div subnews-content에 a 태그 추가하기
+
+
+@media screen and (min-width: 0px) and (max-width: $mobile) {
+    .Subnews {
+        .subnews-content{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+            .subnews-title{
+                font-size: 1.8rem;
+                padding-bottom: 3px;
+            }
+            .subnews-text{
+                font-size: 1.4rem;
+                color: $text-color;
+            }
+        }
+    }
+}
+@media screen and (min-width: $mobile + 1) and (max-width: $tablet) {
+    .Subnews {
+        .subnews-content{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            
+            .subnews-title{
+                font-size: 2.5rem;
+                padding-bottom: 4px;
+            }
+            .subnews-text{
+                font-size: 2.1rem;
+                color: $text-color;
+            }
+        }
+    }
+}
+@media screen and (min-width: $tablet + 1) {
+    .Subnews {
+        .subnews-content{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            
+            .subnews-title{
+                font-size: 3rem;
+                padding-bottom: 5px;
+            }
+            .subnews-text{
+                font-size: 2.6rem;
+                color: $text-color;
+            }
+        }
+    }
+}

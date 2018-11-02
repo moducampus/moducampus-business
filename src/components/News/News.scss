@@ -1,7 +1,39 @@
 @import "../../styles/lib/all";
 
-
-.news-section {
+.News {
     position: relative;
-    padding-bottom: $section-bottom;
+    height: 100%;
+}
+
+@media screen and (min-width: 0px) and (max-width: $mobile) {
+    .News {
+        margin-top: 10vh;
+        .news-wrapper{
+            .news-content{
+                padding-left: 7rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $mobile + 1) and (max-width: $tablet) {
+    .News {
+        margin-top: 15vh;
+        .news-wrapper{
+            .news-content{
+                padding-left: 9rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $tablet + 1) {
+    .News {
+        margin-top: 20vh;
+        .news-wrapper{
+            .news-content{
+                padding-left: 11rem;
+            }
+        }
+    }
 }
