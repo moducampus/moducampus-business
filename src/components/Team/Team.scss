@@ -1,0 +1,25 @@
+@import "../../styles/lib/all";
+
+.Team{
+    position: relative;
+    height: 100%;
+
+}
+
+@media screen and (min-width: 0px) and (max-width: $mobile) {
+    .Team {
+        margin-top: 10vh;
+    }
+}
+
+@media screen and (min-width: $mobile + 1) and (max-width: $tablet) {
+    .Team {
+        margin-top: 15vh;
+    }
+}
+
+@media screen and (min-width: $tablet + 1) {
+    .Team {
+        margin-top: 20vh;
+    }
+}

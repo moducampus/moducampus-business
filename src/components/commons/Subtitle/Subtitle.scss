@@ -19,13 +19,14 @@
             position: absolute;
             font-weight: 800;
             word-break: keep-all;
+            color: $title-color;
         }
     }    
 }
 
 @media screen and (min-width: 0px) and (max-width: $mobile) {
     .Subtitle {
-        height: 10vh;
+        height: 8rem;
         .small-square {
             width: 25px;
             height: 25px;
@@ -39,7 +40,7 @@
 }
 @media screen and (min-width: $mobile + 1) and (max-width: $tablet) {
     .Subtitle {
-        height: 13vh;
+        height: 10rem;
         .small-square {
             width: 30px;
             height: 30px;
@@ -53,7 +54,7 @@
 }
 @media screen and (min-width: $tablet + 1) {
     .Subtitle {
-        height: 15vh;
+        height: 12.6rem;
         .small-square {
             width: 35px;
             height: 35px;

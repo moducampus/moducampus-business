@@ -8,10 +8,12 @@ class Subnews extends Component {
             <div className="Subnews" id="subnews">
                 <div className="subnews-wrapper">
                     <div className="subnews-line"></div>
-                    <div className="subnews-content">
-                        <p className="subnews-title">{this.props.title}</p>
-                        <p className="subnews-text">{this.props.text}</p>
-                    </div>
+                    <a href={this.props.link}>
+                        <div className="subnews-content">
+                            <p className="subnews-title">{this.props.title}</p>
+                            <p className="subnews-text">{this.props.text}</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         );

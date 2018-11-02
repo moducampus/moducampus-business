@@ -1,4 +1,6 @@
 // 나눔스퀘어 폰트
+// font-weight Light(300), Regular(400), Bold(700), Extra Bold(800)지원됩니다.
+
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 
 * {
@@ -7,8 +9,6 @@
     box-sizing: border-box;  // 넓이나 높이에 border 포함
 }
 
-
-/* FIXME: 애그머니나 이것이 무엇이당가요!? ㅋㅋㅋㅋㅋㅋㅋㅋ이것은 안됩니다. 모두가 알고있는 고유의 값을 사용해주세요. */ 
 html {
     font-size: 62.5%; // 16px의 62.5%는 10px
 }

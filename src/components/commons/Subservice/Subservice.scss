@@ -2,7 +2,6 @@
 
 .Subservice{
     width: 100%;
-    margin-bottom: 10vh;
 
     .service-link{
         color: $text-color;
@@ -12,28 +11,36 @@
     https://github.com/moducampus/moducampus-business/commit/914f72ee8d8be2726fa4f2b1b1e6501bb13cd61a 
     의 2번 질문 요건 해결 .service-wrapper 에서 display flex를 이요한다.
     */
+    
     .service-wrapper {
         display: flex;
         justify-content: space-between;
+        .service-main-text{
+            color: $small-title-color;
+            font-weight: 700;
+        }
     }
+
+
     .service-text {
         @include text;
         position: relative;
-        margin-top: 30px;
+        margin-top: 1.6rem;
     }
 }
 
 @media screen and (min-width: 0px) and (max-width: $mobile) {
     .Subservice {
+        margin-bottom: 5rem;
         .service-main-text{
-            font-size: 2.5rem;
+            font-size: 1.4rem;
             margin-bottom: 10px;
         }
         .service-link{
-            font-size: 2rem;
+            font-size: 1.2rem;
         }
         .service-text{
-            font-size: 1.8rem;
+            font-size: 1.4rem;
         }
     }
 }

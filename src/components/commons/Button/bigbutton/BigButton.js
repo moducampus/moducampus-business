@@ -9,8 +9,8 @@ class BigButton extends Component {
                 <div className="bigbtn-wrapper">
                     <a href="https://www.naver.com/">
                         <div className="btn-text">
-                            <span>{this.props.name}</span>
-                            <span>＞</span>
+                            <p>{this.props.name}</p>
+                            <p>＞</p>
                         </div>
                     </a>
                 </div>

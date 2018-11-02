@@ -3,11 +3,11 @@
 .Subnews{
     .subnews-wrapper{
         .subnews-line {
-            border-top: 1px solid $text-color;
+            border-top: 1px solid $news-line-color;
         }
         .subnews-content{
             .subnews-title{
-                color: black;
+                color: $small-title-color;
                 
             }
             .subnews-text{
@@ -17,9 +17,6 @@
     }
 }
 
-//TODO: div subnews-content에 a 태그 추가하기
-
-
 @media screen and (min-width: 0px) and (max-width: $mobile) {
     .Subnews {
         .subnews-content{
@@ -27,7 +24,7 @@
             padding-bottom: 10px;
             
             .subnews-title{
-                font-size: 1.8rem;
+                font-size: 1.2rem;
                 padding-bottom: 3px;
             }
             .subnews-text{
