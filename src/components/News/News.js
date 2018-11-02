@@ -15,7 +15,7 @@ class News extends Component {
             {title: "더보기", text:"", link:"https://www.naver.com/"},
         ];
 
-        const newsList = newsData.map(data =>( <Subnews className="subservice" key={data.title.toString()} title={data.title.toString()} text={data.text.toString()}/>));
+        const newsList = newsData.map(data =>( <Subnews className="subservice" key={data.title.toString()} title={data.title.toString()} text={data.text.toString()} link={data.link.toString()}/>));
         
         return (
             <div className="News" id="news">

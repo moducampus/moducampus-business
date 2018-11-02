@@ -1,5 +1,38 @@
 @import "../../../styles/lib/all";
 
 .Subteam{
+    .subteam-wrapper{
+        padding-left: 8rem;
+        margin-bottom: 8rem;
+        display: flex;
+        justify-content: space-between;
 
+        .subteam-content{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+            .subteam-position{
+                color: #8e8e8e;
+                font-size: 1.4rem;
+            }
+            .subteam-name{
+                color: $small-title-color;
+                font-size: 2rem;
+                font-weight: 700;
+            }
+            .subteam-text{
+                color: $small-title-color;
+                font-size: 1.2rem;
+                font-family: 'Noto Serif KR';
+                font-weight: 300;
+            }
+        }
+    }
+
+    .subteam-profile{
+        width: 13rem;
+        height: 13rem;
+        margin-left: 5px;
+    }
 }

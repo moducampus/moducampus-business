@@ -15,6 +15,7 @@ class Team extends Component {
             {position: "개발자", name: "조용진", text:"재밌는 것만 하고 싶어!"},
             {position: "개발자", name: "이동수", text:"같이 할 때의 가치는 더욱 커집니다."}
         ];
+        
         const teamList = teamData.map(data =>( <Subteam className="subteam" key={data.name.toString()} position={data.position.toString()} name={data.name.toString()} text={data.text.toString()}/>));
 
         return (

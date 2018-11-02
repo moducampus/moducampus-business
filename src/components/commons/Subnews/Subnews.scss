@@ -5,13 +5,17 @@
         .subnews-line {
             border-top: 1px solid $news-line-color;
         }
-        .subnews-content{
-            .subnews-title{
-                color: $small-title-color;
-                
-            }
-            .subnews-text{
-                color: $text-color;
+        a{
+            text-decoration: none;
+            .subnews-content{
+        
+                .subnews-title{
+                    color: $small-title-color;
+                    
+                }
+                .subnews-text{
+                    color: $text-color;
+                }
             }
         }
     }
