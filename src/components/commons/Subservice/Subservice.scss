@@ -8,7 +8,14 @@
         color: $text-color;
         text-decoration: none;
     }
-
+    /*
+    https://github.com/moducampus/moducampus-business/commit/914f72ee8d8be2726fa4f2b1b1e6501bb13cd61a 
+    의 2번 질문 요건 해결 .service-wrapper 에서 display flex를 이요한다.
+    */
+    .service-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
     .service-text {
         @include text;
         position: relative;

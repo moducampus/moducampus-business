@@ -6,7 +6,7 @@ class BigButton extends Component {
     render() {
         return (
             <div className="BigButton" id="bigbutton">
-                <div className=" bigbtn-wrapper">
+                <div className="bigbtn-wrapper">
                     <a href="https://www.naver.com/">
                         <div className="btn-text">
                             <span>{this.props.name}</span>

@@ -15,13 +15,16 @@
 }
 
 @media screen and (min-width: 0px) and (max-width: $mobile) {
-    .Company {
-        margin-top: 10vh;
+    // FIXME: 디스플레이 배율이 아닌 고정값 사용.
+    // 모바일에는 vh가 아닌 rem을 주었다.
+    // padding-left 는 80px, right 24px을 주려고함
 
+    .Company {
+        margin-top: 3rem;
         .company-text{
             font-size: 1.8rem;
-            padding-left: 7rem;
-            padding-right: 4rem;
+            padding-left: 5rem;
+            padding-right: 1.5rem;
         }
     }
 }
