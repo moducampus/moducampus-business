@@ -7,7 +7,7 @@ class BigButton extends Component {
         return (
             <div className="BigButton" id="bigbutton">
                 <div className="bigbtn-wrapper">
-                    <a href="https://www.naver.com/">
+                    <a href={this.props.url}>
                         <div className="btn-text">
                             <p>{this.props.name}</p>
                             <p>＞</p>
