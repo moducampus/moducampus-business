@@ -2,8 +2,6 @@
 
 .Subteam{
     .subteam-wrapper{
-        padding-left: 8rem;
-        margin-bottom: 8rem;
         display: flex;
         justify-content: space-between;
 
@@ -14,16 +12,13 @@
 
             .subteam-position{
                 color: #8e8e8e;
-                font-size: 1.4rem;
             }
             .subteam-name{
                 color: $small-title-color;
-                font-size: 2rem;
                 font-weight: 700;
             }
             .subteam-text{
                 color: $small-title-color;
-                font-size: 1.2rem;
                 font-family: 'Noto Serif KR';
                 font-weight: 300;
             }
@@ -34,5 +29,49 @@
         width: 13rem;
         height: 13rem;
         margin-left: 5px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: $mobile) {
+    .Subteam{
+        .subteam-wrapper{
+            padding-left: 8rem;
+            margin-bottom: 8rem;
+        }
+        .subteam-position{
+            font-size: 1.4rem;
+        }
+        .subteam-name{
+            font-size: 2rem;
+        }
+        .subteam-text{
+            font-size: 1.2rem;
+        }
+    }
+}
+@media screen and (min-width: $mobile + 1) and (max-width: $tablet) {
+    .Subteam{
+        .subteam-wrapper{
+            padding-left: 13.5rem;
+            margin-bottom: 8rem;
+        }
+        .subteam-position{
+            font-size: 1.6rem;
+        }
+        .subteam-name{
+            font-size: 2.2rem;
+        }
+        .subteam-text{
+            font-size: 1.4rem;
+        }
+    }
+    
+}
+@media screen and (min-width: $tablet + 1) {
+    .Subteam{
+        .subteam-wrapper{
+            padding-left: 8rem;
+            margin-bottom: 8rem;
+        }  
     }
 }

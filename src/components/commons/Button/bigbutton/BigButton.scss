@@ -16,6 +16,9 @@
                 background-color: $btn-gray;
                 color: $text-color;
                 height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
             
         }
@@ -25,31 +28,22 @@
 @media screen and (min-width: 0px) and (max-width: $mobile) {
     .BigButton {
         padding-left: 8rem;
-        padding-right: 4em;
         height: 5.1rem;
-        
         .bigbtn-wrapper{
-
             a{
-                font-size: 1.5rem;
-                .btn-text{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
+                font-size: 1.4rem;
             }
         }
     }
 }
+
 @media screen and (min-width: $mobile + 1) and (max-width: $tablet) {
     .BigButton {
-        padding-left: 9rem;
-        padding-right: 5em;
+        padding-left: 13.5rem;
         height: 8vh;
         .bigbtn-wrapper{
-
             a{
-                font-size: 2.5rem;
+                font-size: 1.6rem;
             }
         }
     }

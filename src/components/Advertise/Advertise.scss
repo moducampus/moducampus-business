@@ -22,6 +22,7 @@
         .advertise-content{
             padding-left: 8rem;
             padding-right: 4rem;
+            padding-top: 5rem;
 
             .advertise-main-text{
                 font-size: 1.4rem;
@@ -41,16 +42,18 @@
     .Advertise {
         margin-top: 15vh;
         .advertise-content{
-            padding-left: 9rem;
-            padding-right: 5rem;
+            padding-left: 13.5rem;
+            padding-right: 4.5rem;
+            padding-top: 5rem;
+
         }
         .advertise-main-text{
-            font-size: 3rem;
+            font-size: 1.6rem;
             margin-bottom: 30px;
         }
         .advertise-text{
             @include text;
-            font-size: 2.5rem;
+            font-size: 1.6rem;
             margin-bottom: 30px;
         }
     }
