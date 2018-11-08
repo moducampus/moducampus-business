@@ -58,15 +58,15 @@
 @media screen and (min-width: $tablet + 1) {
     .Subnews {
         .subnews-content{
-            padding-top: 15px;
-            padding-bottom: 15px;
+            padding-top: 30px;
+            padding-bottom: 30px;
             
             .subnews-title{
-                font-size: 3rem;
+                font-size: 1.6rem;
                 padding-bottom: 5px;
             }
             .subnews-text{
-                font-size: 2.6rem;
+                font-size: 1.8rem;
                 color: $text-color;
             }
         }

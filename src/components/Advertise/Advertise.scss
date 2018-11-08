@@ -49,12 +49,12 @@
         }
         .advertise-main-text{
             font-size: 1.6rem;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
         .advertise-text{
             @include text;
             font-size: 1.6rem;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
     }
 }
@@ -63,17 +63,17 @@
     .Advertise {
         margin-top: 20vh;
         .advertise-content{
-            padding-left: 11rem;
-            padding-right: 7rem;
+            padding-left: 16.5rem;
+            padding-right: 5rem;
         }
         .advertise-main-text{
-            font-size: 4rem;
-            margin-bottom: 30px;
+            font-size: 1.8rem;
+            margin-bottom: 50px;
         }
         .advertise-text{
             @include text;
-            font-size: 3rem;
-            margin-bottom: 30px;
+            font-size: 1.8rem;
+            margin-bottom: 50px;
         }
     }
 }

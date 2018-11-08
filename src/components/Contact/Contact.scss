@@ -15,14 +15,10 @@
             }
         }
         .contact-form{
-            padding-left: 8rem;
             input {
                 border: 0;
                 border-bottom: 1px solid $news-line-color;
                 outline: 0;
-                font-size: 1.4rem;
-                padding-bottom: 1rem;
-                margin-bottom: 2.4rem;
                 width: 100%;
             }
             input::placeholder {
@@ -33,13 +29,10 @@
             input[type=submit]{
                 margin-bottom: 0;
             }
-
             textarea {
                 border: 0;
                 border-bottom: 1px solid $news-line-color;
                 outline: 0;
-                font-size: 1.4rem;
-                margin-bottom: 1.5rem;
                 width: 100%;
             }
             input::placeholder {
@@ -47,7 +40,6 @@
                 font-family: 'NanumSquare';
                 
             }
-
             textarea::placeholder {
                 color: $text-color;
                 font-family: 'NanumSquare';
@@ -71,26 +63,66 @@
                 width: 16rem;
             }
         }
+        .contact-form{
+            padding-left: 8rem;
+            input {
+                font-size: 1.4rem;
+                padding-bottom: 1rem;
+                margin-bottom: 2.4rem;
+            }
+            textarea {
+                font-size: 1.4rem;
+                margin-bottom: 1.5rem;
+            }
+        }
     }
 }
 
 @media screen and (min-width: $mobile + 1) and (max-width: $tablet) {
-    .contact-map{
-        padding-top: 4rem;
-        padding-left: 13.5rem;
-
-        .contact-map-text {
-            font-size: 1.4rem;
-            padding-top: 4rem;
+    .contact-content{
+        .contact-map{
+            padding-top: 5rem;
+            padding-left: 13.5rem;
+            .contact-map-text {
+                font-size: 1.4rem;
+                padding-top: 4rem;
+            }
+        }
+        .contact-form{
+            padding-left: 13.5rem;
+            input {
+                font-size: 1.6rem;
+                padding-bottom: 1rem;
+                margin-bottom: 2.4rem;
+            }
+            textarea {
+                font-size: 1.6rem;
+                margin-bottom: 1.7rem;
+            }
         }
     }
 }
 
 @media screen and (min-width: $tablet + 1) {
+    
     .contact-map{
+        padding-top: 6rem;
+        padding-left: 16.5rem;
         .contact-map-text {
-            font-size: 1.2rem;
+            font-size: 1.8rem;
             padding-top: 4rem;
+        }
+    }
+    .contact-form{
+        padding-left: 16.5rem;
+        input {
+            font-size: 1.8rem;
+            padding-bottom: 1rem;
+            margin-bottom: 2.4rem;
+        }
+        textarea {
+            font-size: 1.8rem;
+            margin-bottom: 1.9rem;
         }
     }
 }

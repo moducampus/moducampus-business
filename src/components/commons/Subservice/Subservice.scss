@@ -7,9 +7,10 @@
         color: $text-color;
         text-decoration: none;
     }
+
     /*
     https://github.com/moducampus/moducampus-business/commit/914f72ee8d8be2726fa4f2b1b1e6501bb13cd61a 
-    의 2번 질문 요건 해결 .service-wrapper 에서 display flex를 이요한다.
+    의 2번 질문 요건 해결 .service-wrapper 에서 display flex를 이용한다.
     */
     
     .service-wrapper {
@@ -18,10 +19,9 @@
         .service-main-text{
             color: $small-title-color;
             font-weight: 700;
+            display: inline;
         }
     }
-
-
     .service-text {
         @include text;
         position: relative;
@@ -49,10 +49,10 @@
         margin-bottom: 6rem;
         .service-main-text{
             font-size: 1.6rem;
-            display: inline;
+            margin-bottom: 15px;
         }
         .service-link{
-            font-size: 1.6rem;
+            font-size: 1.4rem;
         }
         .service-text{
             font-size: 1.6rem;
@@ -61,15 +61,16 @@
 }
 @media screen and (min-width: $tablet + 1) {
     .Subservice {
+        margin-bottom: 7rem;
         .service-main-text{
-            font-size: 4.5rem;
-            display: inline;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
         }
         .service-link{
-            font-size: 4rem;
+            font-size: 1.6rem;
         }
         .service-text{
-            font-size: 3rem;
+            font-size: 1.8rem;
         }
     }
 }
