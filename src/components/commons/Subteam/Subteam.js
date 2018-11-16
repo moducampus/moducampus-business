@@ -13,7 +13,7 @@ class Subteam extends Component {
                         </div>
                         <p className="subteam-text">{this.props.text}</p>   
                     </div>
-                    <img className="subteam-profile" src="https://mblogthumb-phinf.pstatic.net/20150427_84/ninevincent_1430122792324niOLy_JPEG/kakao_2.jpg?type=w420@2x" alt="profile-photo"/>
+                    <img className="subteam-profile" src="https://mblogthumb-phinf.pstatic.net/20150427_84/ninevincent_1430122792324niOLy_JPEG/kakao_2.jpg?type=w420@2x" alt="profile"/>
                 </div>
             </div>
         );

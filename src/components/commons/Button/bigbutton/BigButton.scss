@@ -40,7 +40,7 @@
 @media screen and (min-width: $mobile + 1) and (max-width: $tablet) {
     .BigButton {
         padding-left: 13.5rem;
-        height: 8vh;
+        height: 6rem;
         .bigbtn-wrapper{
             a{
                 font-size: 1.6rem;
@@ -51,7 +51,7 @@
 @media screen and (min-width: $tablet + 1) {
     .BigButton {
         padding-left: 16.5rem;
-        height: 10vh;
+        height: 8rem;
         .bigbtn-wrapper{
 
             a{
