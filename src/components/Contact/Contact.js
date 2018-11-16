@@ -5,7 +5,6 @@ import Subtitle from "components/commons/Subtitle";
 import BigButton from "components/commons/Button/BigButton";
 
 import './Contact.scss';
-
 //TODO: form data 부분 완성
 
 class Contact extends Component {
@@ -21,7 +20,7 @@ class Contact extends Component {
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-
+    
     handleInputChange(event) {
         const target = event.target;
         const value = target.value;
@@ -32,9 +31,11 @@ class Contact extends Component {
         });
     }
 
+
     handleSubmit(event) {
         alert(this.state.formContact);
         event.preventDefault();
+        
         /*
         const {formTitle, formName, formContact, formQuestion} = this.state;
         console.log(this.state);
@@ -45,6 +46,7 @@ class Contact extends Component {
             });
 
         */
+
     }
 
     render() {

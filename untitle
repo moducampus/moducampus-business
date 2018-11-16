@@ -1,0 +1,5 @@
+aws s3 --profile moducampus-client ls s3://moducampus-business
+aws s3 --profile moducampus-client cp build s3://moducampus-business --recursive
+
+
+teraform
