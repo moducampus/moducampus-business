@@ -1,6 +1,10 @@
 service:
   name: moducampus-business-server
 
+plugins:
+  - serverless-offline
+
+
 provider:
   name: aws
   runtime: nodejs8.10

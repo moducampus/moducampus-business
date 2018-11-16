@@ -4,9 +4,13 @@
   "description": "",
   "main": "handler.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development NODE_PATH=src sls offline --stage=local",
-    "deploy": "cross-env NODE_ENV=production NODE_PATH=src deploy", # 바로 운영으로 올릭위해
+    "start": "cross-env NODE_ENV=development NODE_PATH=src sls offline start --stage=local",
+    "deploy": "cross-env NODE_ENV=production NODE_PATH=src deploy"
   },
   "author": "drakejin <dydwls121200@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "serverless": "^1.33.1",
+    "serverless-offline": "^3.31.3"
+  }
 }
