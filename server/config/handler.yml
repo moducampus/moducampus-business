@@ -1,0 +1,6 @@
+ssr:
+  handler: src/handler.ssr
+  events:
+    - http: 
+        path: /
+        method: POST

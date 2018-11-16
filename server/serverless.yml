@@ -1,0 +1,17 @@
+service:
+  name: moducampus-business-server
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: ${env:NODE_ENV} # Set the default stage used. Default is dev
+  region: ap-northeast-2 # Overwrite the default region used. Default is us-east-1
+  profile: ${file(./config/env.yml):Profile} # The default profile to use with this service
+  memorySize: 512 # Overwrite the default memory size. Default is 1024
+  environment:
+    NODE_ENV: ${self:provider.stage}
+  deploymentBucket:
+    name: moducampus-business.sls # Overwrite the default deployment bucket
+    serverSideEncryption: AES256 # when using server-side encryption
+
+functions: ${file(./config/handler.yml)}

@@ -1,0 +1,12 @@
+{
+  "name": "moducampus-business-sls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development NODE_PATH=src sls offline --stage=local",
+    "deploy": "cross-env NODE_ENV=production NODE_PATH=src deploy", # 바로 운영으로 올릭위해
+  },
+  "author": "drakejin <dydwls121200@gmail.com>",
+  "license": "ISC"
+}
