@@ -1,5 +1,5 @@
-ssr:
-  handler: src/handler.ssr
+hello:
+  handler: src/handler.hello
   events:
     - http: 
         path: /
