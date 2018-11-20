@@ -4,12 +4,12 @@
   "description": "",
   "main": "handler.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development NODE_PATH=src sls offline start --stage=local",
+    "start": "cross-env NODE_ENV=development NODE_PATH=src sls offline start --port 3001 --stage=local",
     "deploy": "cross-env NODE_ENV=production NODE_PATH=src deploy"
   },
   "author": "drakejin <dydwls121200@gmail.com>",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "serverless": "^1.33.1",
     "serverless-offline": "^3.31.3"
   }

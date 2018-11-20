@@ -1,6 +1,6 @@
 hello:
-  handler: src/handler.hello
+  handler: handler.hello
   events:
     - http: 
         path: /
-        method: POST
+        method: GET
