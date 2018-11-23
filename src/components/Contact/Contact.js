@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 import Subtitle from "components/commons/Subtitle";
-import BigButton from "components/commons/Button/BigButton";
-
 import './Contact.scss';
-//TODO: form data 부분 완성
 
 class Contact extends Component {
 
@@ -15,7 +12,7 @@ class Contact extends Component {
             formTitle: "",
             formName: "",
             formContact: "",
-            formQuestion: ""
+            formContents: ""
         }
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -31,28 +28,32 @@ class Contact extends Component {
         });
     }
 
-
     handleSubmit(event) {
-        alert(this.state.formContact);
-        event.preventDefault();
-        
-        /*
-        const {formTitle, formName, formContact, formQuestion} = this.state;
-        console.log(this.state);
 
-        axios.post('/', {formTitle, formName, formContact, formQuestion})
-            .then((result)=>{
-                console.log(result);
-            });
+        const data = JSON.stringify({
+            title: this.state.formTitle, 
+            name: this.state.formName,
+            contact: this.state.formContact,
+            contents: this.state.formContents
+        })
 
-        */
+        axios.post('http://localhost:3001', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: data,
+        }).then(response => alert('문의가 접수되었습니다 😄'))
+          .catch(error => alert('전송 실패했습니다 😂'))
 
+       event.preventDefault();  
     }
+
+    /*TODO: 전송 성공하면 form data에 있는 값들 모두 사라지게 */
 
     render() {
         const title = "CONTACT US";
         const mapText = "서울특별시 성북구 안암로 145 고려대학교 산학관 5층 506호";
-        const btnName = "문의하기";
         
         return (
             <div className="Contact" id="contact">
@@ -68,10 +69,10 @@ class Contact extends Component {
                                 <input name="formTitle" type= "text" value={this.state.formTitle} onChange={this.handleInputChange} placeholder="제목"></input>
                                 <input name="formName" type= "text" value={this.state.formName} onChange={this.handleInputChange} placeholder="이름"></input>
                                 <input name="formContact" type= "email" value={this.state.formContact} onChange={this.handleInputChange} placeholder="이메일 또는 전화번호"></input>
-                                <textarea name="formQuestion" form="user-form" value={this.state.formQuestion} onChange={this.handleInputChange} placeholder="문의사항"></textarea>
+                                <textarea name="formContents" form="user-form" rows="5" value={this.state.formQuestion} onChange={this.handleInputChange} placeholder="문의사항"></textarea>
+                                <input type="submit" value="문의하기"></input>
                             </form>
                         </div>
-                        <BigButton className="submit-button" name={btnName} url={""}/>
                     </div>
                 </div>
             </div>

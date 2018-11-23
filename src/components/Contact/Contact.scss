@@ -15,7 +15,9 @@
             }
         }
         .contact-form{
-            input {
+
+            input, textarea{
+                font-family: 'NanumSquare';
                 border: 0;
                 border-bottom: 1px solid $news-line-color;
                 outline: 0;
@@ -24,21 +26,14 @@
             input::placeholder {
                 color: $text-color;
                 font-family: 'NanumSquare';
-                
             }
             input[type=submit]{
                 margin-bottom: 0;
-            }
-            textarea {
-                border: 0;
-                border-bottom: 1px solid $news-line-color;
-                outline: 0;
-                width: 100%;
-            }
-            input::placeholder {
+                background-color: $btn-gray;
                 color: $text-color;
-                font-family: 'NanumSquare';
-                
+                height: 100%;
+                display: flex;
+                justify-content: center;
             }
             textarea::placeholder {
                 color: $text-color;
@@ -46,9 +41,7 @@
             }
 
         }
-        .BigButton{
-            padding-right: 0;
-        }
+        
     }
 }
 
@@ -69,6 +62,10 @@
                 font-size: 1.4rem;
                 padding-bottom: 1rem;
                 margin-bottom: 2.4rem;
+            }
+            input[type=submit] {
+                padding-top: 10px;
+                padding-bottom: 10px;
             }
             textarea {
                 font-size: 1.4rem;
@@ -95,6 +92,10 @@
                 padding-bottom: 1rem;
                 margin-bottom: 2.4rem;
             }
+            input[type=submit] {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
             textarea {
                 font-size: 1.6rem;
                 margin-bottom: 1.7rem;
@@ -119,6 +120,10 @@
             font-size: 1.8rem;
             padding-bottom: 1rem;
             margin-bottom: 2.4rem;
+        }
+        input[type=submit] {
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
         textarea {
             font-size: 1.8rem;
