@@ -3,7 +3,6 @@ service:
 
 plugins:
   - serverless-offline
-  
 
 provider:
   name: aws

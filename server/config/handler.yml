@@ -1,6 +1,11 @@
-hello:
-  handler: handler.hello
+api:
+  handler: ../server/apiHandler.handler
   events:
     - http: 
         path: /
-        method: GET
+        method: ANY
+        cors: true
+    - http: 
+        path: /{proxy+}
+        method: ANY
+        cors: true

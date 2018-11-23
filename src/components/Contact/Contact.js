@@ -43,10 +43,10 @@ class Contact extends Component {
                 'content-type': 'application/json'
             },
             body: data,
-        }).then(response => alert('문의가 접수되었습니다 😄'))
-          .catch(error => alert('전송 실패했습니다 😂'))
+        }).then(response => alert('문의가 접수되었습니다😄'))
+          .catch(error => alert('전송 실패했습니다😂'))
 
-       event.preventDefault();  
+        event.preventDefault();  
     }
 
     /*TODO: 전송 성공하면 form data에 있는 값들 모두 사라지게 */
